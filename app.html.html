@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    
+    <link href="Style.css" rel="stylesheet" />
+
+    <script src="jogo.js"></script>
+
+    <title>Game Mata Mosquito</title>
+</head>
+
+<body onresize="ajustaTamanhoPalcoJogo()">
+
+    <!--<img src="imagens/mosquito.png" alt="Mosquito" class="mosquito1"/>-->
+
+    <div class="painel">
+
+        <div class="vidas">
+            <img id="v1" src="imagens/coracao_cheio.png">
+            <img id="v2" src="imagens/coracao_cheio.png">
+            <img id="v3" src="imagens/coracao_cheio.png">
+        </div>
+
+        <div class="cronometro">
+            Tempo restante?
+
+        </div>
+
+    </div>
+
+    <script>
+
+        setInterval(function () {
+            posicaoRandomica();
+        }, 2000);
+
+        
+    </script>
+
+</body>
+</html>
